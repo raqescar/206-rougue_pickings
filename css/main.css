@@ -123,8 +123,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: auto;
+	width:inherit;
 	border-top: 1px solid #eee;
 }
 
@@ -175,4 +174,27 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+/* ---------------------------------
+Breakpoints for media queries
+---------------------------------*/
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+
+		.bottom-section {
+			align-items:stretch;
+		}
+
+		.section-one,
+		.section-two,
+		.section-three {
+			width: 33%;
+
+}
+
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+
 }
